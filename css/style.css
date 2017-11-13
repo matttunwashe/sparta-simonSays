@@ -1,8 +1,151 @@
-/*body{
-    background-color: red;
-}*/
+@import url(https://fonts.googleapis.com/css?family=Antic+Slab);
+
+body {
+
+    font-family: 'Antic Slab', serif;
+    text-align: center;
+    color: #f8f0ff;
+    background: rgba(139, 173, 0, 1);
+    background: -moz-linear-gradient(left, rgba(139, 173, 0, 1) 0%, rgba(139, 173, 0, 1) 16%, rgba(83, 146, 7, 1) 100%);
+    background: -webkit-gradient(linear-gradient, right top, color-stop(0%, rgba(139, 173, 0, 1)), color-stop(16%, rgba(139, 173, 0, 1)), color-stop(100%, rgba(83, 146, 7, 1)));
+    background: -webkit-linear-gradient(left, rgba(139, 173, 0, 1) 0%, rgba(139, 173, 0, 1) 16%, rgba(83, 146, 7, 1) 100%);
+    background: -o-linear-gradient(left, rgba(139, 173, 0, 1) 0%, rgba(139, 173, 0, 1) 16%, rgba(83, 146, 7, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(139, 173, 0, 1) 0%, rgba(139, 173, 0, 1) 16%, rgba(83, 146, 7, 1) 100%);
+    background: linear-gradient(to right, rgba(139, 173, 0, 1) 0%, rgba(139, 173, 0, 1) 16%, rgba(83, 146, 7, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8bad00', endColorstr='#539207', GradientType=1);
+
+}
+
+section {
+    margin-top: 100px;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    margin: 250px auto 0 auto;
+    bottom: 0;
+}
+
+a:visited, a:focus, a:link {
+    text-decoration: none;
+    color: #f8f0ff;
+}
+
+.centered {
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+}
+
+#gameOff, #gameOn {
+    margin-top: 20px;
+    background-color: transparent;
+    width: 40%;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#gameOn {
+    display: none;
+}
+#gameOn button, #gameOff button {
+    font-size: 18px;
+}
+
+.menu button {
+    background-color: #ffffff;
+    border: none;
+    margin: auto 3px;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+    color: rgba(139, 173, 0, 1);
+}
+
+.gameText {
+    margin-bottom: 10px;
+}
+
+.menu button:hover {
+    transform: scale(1.1);
+}
+
+.menu button:focus {
+    outline: none;
+}
 
 
 
-#startButton{
+.button {
+    color: #fff;
+    font-size: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 2px solid #fff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+#tip {
+    margin-top: 10px;
+}
+
+.lvl {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}
+
+.buttonQ {
+    background-color: #9ACD32;
+    border-top-left-radius: 50%;
+}
+
+.buttonQ:focus {
+    background-color: #c7ff37;
+}
+
+.buttonW {
+    background-color: #d1d100;
+    border-top-right-radius: 50%;
+}
+
+.buttonW:focus {
+    background-color: #f7f700;
+}
+
+.buttonA {
+    background-color: #dc0100;
+    border-bottom-left-radius: 50%;
+}
+
+.buttonA:focus {
+    background-color: #ff3700;
+}
+
+.buttonS {
+    background-color: #0000bf;
+    border-bottom-right-radius: 50%;
+}
+
+.buttonS:focus {
+    background-color: #007eff;
 }

@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Simon Says Game</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/style.css">
-        <script type="text/javascript" src="js/main.js"></script>
-    </head>
-    <body>
-        <!-- Start Button -->
-        <button type="button" id="startButton" class="btn btn-secondary">Start Game</button>
-<!-- replay button -->
-        <button type="button" id="replayButton" class="btn btn-secondary">Replay</button>
+  <head>
+    <meta charset=“utf-8”>
+    <title>Sparta Simon Says</title>
+    <script
+    src=“https://code.jquery.com/jquery-3.2.1.js”
+    integrity=“sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=”
+    crossorigin=“anonymous”></script>
+    <link rel=“stylesheet” href=“https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css” integrity=“sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u” crossorigin=“anonymous”>
+    <link rel=“stylesheet” href=“./css/style.css”>
+    <script src=“https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js”></script>
+    <script type=“text/javascript” src=“./js/main.js”>
+    </script>
+  </head>
+  <body>
+      <section class="container centered">
 
-        <!-- - Title
-- Start button
-- Replay button
-- Current Score
-- Coloured buttons (4 max)
-- Computer's color display (a single div that flashes in the order of the colours the player needs to copy) -->
+          <div id="game" class="centered">
+              <div id="row1" class="centered">
+                  <button class="button buttonQ" id="q">Q</button>
+                  <button class="button buttonW" id="w">W</button>
 
-    </body>
+              </div>
+              <div id="row2" class="centered">
+                  <button class="button buttonA" id="a">A</button>
+                  <button class="button buttonS" id="s">S</button>
+              </div>
+
+
+          </div>
+          <div id="gameOff" class="menu centered">
+              <div class="gameText">Select difficulty to start</div>
+              <button id="easy">Easy</button><button id="strict">Strict</button>
+          </div>
+          <div id="gameOn" class="menu centered hidden">
+              <div class="lvl"></div>
+              <button id="restart">Restart</button>
+          </div>
+          <div id="tip">Tip: Use QWAS buttons for better experience</div>
+      </section>
+    
+  </body>
 </html>
